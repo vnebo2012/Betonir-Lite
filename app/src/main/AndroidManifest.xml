@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.betonirlite.nikolay.betonir">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main2Activity"
+
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HellpActivity" />
+        <activity
+            android:name=".Fun1Activity"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fun2Activity"
+            android:label="@string/title_activity_fun2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fun3Activity"
+            android:label="@string/title_activity_fun3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fun4Activity"
+            android:label="@string/title_activity_fun4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fun5Activity"
+            android:label="@string/title_activity_fun5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fun8Activity"
+            android:label="@string/title_activity_fun8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris1Activity"
+            android:label="@string/title_activity_pris_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris2Activity"
+            android:label="@string/title_activity_pris_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris3Activity"
+            android:label="@string/title_activity_pris_3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris4Activity"
+            android:label="@string/title_activity_pris_4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris5Activity"
+            android:label="@string/title_activity_pris_5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pris6Activity"
+            android:label="@string/title_activity_pris_8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".WebArmaturaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plita1Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plita2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kolona1Activity"
+            android:label="@string/title_activity_kolona1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kolona2Activity"
+            android:label="@string/title_activity_kolona2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kolona3Activity"
+            android:label="@string/title_activity_kolona3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KirpishActivity"
+            android:label="@string/kirp_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+    </group>
+
+    <item android:title="@string/Poisk">
+        <menu>
+            <item
+                android:id="@+id/navi_beton"
+                android:icon="@drawable/ic_search"
+                android:title="@string/bet" />
+            <item
+                android:id="@+id/navi_armatura"
+                android:icon="@drawable/ic_search"
+                android:title="@string/arm" />
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/market"
+        android:icon="@mipmap/ic_app"
+        android:title="@string/arm111" />
+
+    <item
+        android:id="@+id/pod"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/arm222" />
+
+    <item
+        android:id="@+id/versia_pro"
+        android:icon="@drawable/ic_pro"
+        android:title="@string/pro" />
+
+
+</menu>
