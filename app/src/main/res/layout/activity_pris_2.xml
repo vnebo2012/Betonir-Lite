@@ -29,11 +29,13 @@
 
                 <ImageButton
                     android:id="@+id/dom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="56dp"
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
+                    android:onClick="onClickDom"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/ic_dom" />
+
 
                 <TextView
                     android:id="@+id/textView38"
@@ -42,14 +44,23 @@
                     android:layout_gravity="center_vertical"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Бетонир Lite"
+                    android:text="Betonir Lite"
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:textStyle="bold|italic" />
 
                 <ImageButton
-                    android:id="@+id/calk"
+                    android:id="@+id/res"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:longClickable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_res2" />
+
+                <ImageButton
+                    android:id="@+id/calk"
+                    android:layout_width="56dp"
                     android:layout_height="wrap_content"
                     android:background="@color/colorPrimary"
                     android:onClick="onClick_Ca"
@@ -63,7 +74,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_plita2" />
+    <include layout="@layout/content_pris_2" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

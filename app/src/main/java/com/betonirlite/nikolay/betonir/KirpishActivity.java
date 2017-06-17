@@ -700,7 +700,7 @@ public class KirpishActivity extends AppCompatActivity {
 
         mNewGameButton = (ImageButton) findViewById(R.id.dom);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/5029587751");
+        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/9775368155");
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override

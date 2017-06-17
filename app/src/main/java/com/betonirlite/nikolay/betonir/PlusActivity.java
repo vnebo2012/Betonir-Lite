@@ -71,7 +71,7 @@ public class PlusActivity extends AppCompatActivity {
     }
 
     public void onEmailClick(View v) {
-        String emailAddress = "betonir1@gmail.com";
+        String emailAddress = "vnebo2012@gmail.com";
         String emailSubject = edittextEmailSubject.getText().toString();
         String emailText = edittextEmailText.getText().toString();
         String emailAddressList[] = { emailAddress };
