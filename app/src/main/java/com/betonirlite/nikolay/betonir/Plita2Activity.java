@@ -1103,7 +1103,6 @@ public class Plita2Activity extends AppCompatActivity {
         loadText89();
 
 
-
         //Ряды кнопок (по Алерт Диалогу)
 
         //region секция 1 (button101 = (Button) findViewById(R.id.button10);)
@@ -1114,7 +1113,7 @@ public class Plita2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1122,14 +1121,19 @@ public class Plita2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2698,7 +2702,7 @@ public class Plita2Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-}
+                                                                     }
                                                                  });
 
                                                  AlertDialog alertDialog = mDialogBuilder.create();
@@ -2729,29 +2733,29 @@ public class Plita2Activity extends AppCompatActivity {
 
         imageView1 = (ImageView) findViewById(R.id.imageView24);
         imageView1.setOnClickListener(new View.OnClickListener() {
-                                             //region button124
-                                             @Override
-                                             public void onClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt7, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
+                                          //region button124
+                                          @Override
+                                          public void onClick(View arg0) {
+                                              LayoutInflater li = LayoutInflater.from(context2);
+                                              final View promptsView = li.inflate(R.layout.prompt7, null);
+                                              AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
+                                              mDialogBuilder.setView(promptsView);
 
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                              //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
 
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
+                                              mDialogBuilder
+                                                      .setCancelable(false)
+                                                      .setPositiveButton("OK",
+                                                              new DialogInterface.OnClickListener() {
+                                                                  public void onClick(DialogInterface dialog, int id) {
+                                                                  }
+                                                              });
 
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return;
-                                             }
-                                         }
+                                              AlertDialog alertDialog = mDialogBuilder.create();
+                                              alertDialog.show();
+                                              return;
+                                          }
+                                      }
         );
         //endregion
 
@@ -2941,6 +2945,7 @@ public class Plita2Activity extends AppCompatActivity {
 
 
         //endregion
+
 
 
 

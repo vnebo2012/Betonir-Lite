@@ -1168,6 +1168,7 @@ public class Pris5Activity extends AppCompatActivity {
 
 
 
+
         //Ряды кнопок (по Алерт Диалогу)
 
         //region секция 1 (button101 = (Button) findViewById(R.id.button10);)
@@ -1178,7 +1179,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1186,14 +1187,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button10);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1214,7 +1230,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1222,14 +1238,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button2);
+
+                                                                             kpp41.setText("6.00");
+                                                                             kpp42.setText("6.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text2.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1250,7 +1281,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1258,14 +1289,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button);
+
+                                                                             kpp41.setText("7.00");
+                                                                             kpp42.setText("7.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text3.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1286,7 +1332,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1294,14 +1340,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button3);
+
+                                                                             kpp41.setText("8.00");
+                                                                             kpp42.setText("8.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text4.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1322,7 +1383,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1330,14 +1391,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button5);
+
+                                                                             kpp41.setText("9.00");
+                                                                             kpp42.setText("9.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text5.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1358,7 +1434,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1366,14 +1442,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button6);
+
+                                                                             kpp41.setText("10.00");
+                                                                             kpp42.setText("10.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text6.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1394,7 +1485,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1402,14 +1493,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button7);
+
+                                                                             kpp41.setText("11.00");
+                                                                             kpp42.setText("11.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text7.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1430,7 +1536,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1438,14 +1544,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button38);
+
+                                                                             kpp41.setText("12.00");
+                                                                             kpp42.setText("12.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text8.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1466,7 +1587,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1474,14 +1595,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button40);
+
+                                                                             kpp41.setText("13.00");
+                                                                             kpp42.setText("13.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text9.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1502,7 +1638,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1510,14 +1646,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button39);
+
+                                                                             kpp41.setText("14.00");
+                                                                             kpp42.setText("14.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text10.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1538,7 +1689,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1546,14 +1697,29 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir);
+                                                                             Button kpp42 = (Button) findViewById(R.id.button8);
+
+                                                                             kpp41.setText("15.00");
+                                                                             kpp42.setText("15.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text11.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1578,7 +1744,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1586,14 +1752,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button88);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text12.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1617,7 +1800,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1625,14 +1808,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button89);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text13.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1656,7 +1856,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1664,14 +1864,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button90);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text14.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1695,7 +1912,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1703,14 +1920,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button91);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text15.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1734,7 +1968,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1742,14 +1976,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button92);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text16.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1773,7 +2024,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1781,14 +2032,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button93);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text17.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1812,7 +2080,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1820,14 +2088,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button94);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text18.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1851,7 +2136,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1859,14 +2144,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button95);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text19.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1890,7 +2192,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1898,14 +2200,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button96);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text20.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1985,7 +2304,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1993,14 +2312,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir2);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button9);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text22.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2030,7 +2366,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2038,14 +2374,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button97);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text23.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2069,7 +2422,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2077,14 +2430,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button98);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text24.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2108,7 +2478,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2116,14 +2486,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button99);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text25.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2147,7 +2534,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2155,14 +2542,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button100);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text26.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2186,7 +2590,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2194,14 +2598,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button101);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text27.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2225,7 +2646,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2233,14 +2654,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button102);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text28.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2264,7 +2702,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2272,14 +2710,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button103);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text29.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2303,7 +2758,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2311,14 +2766,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button104);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text30.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2342,7 +2814,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2350,14 +2822,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button105);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text31.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2381,7 +2870,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2389,14 +2878,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button11);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text32.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2420,7 +2926,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2428,14 +2934,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir3);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button12);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text33.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2466,7 +2989,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2474,14 +2997,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button52);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text34.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2505,7 +3045,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2513,14 +3053,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button53);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text35.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2544,7 +3101,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2552,14 +3109,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button54);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text36.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2583,7 +3157,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2591,14 +3165,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button55);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text37.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2622,7 +3213,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2630,14 +3221,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button59);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text38.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2661,7 +3269,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2669,14 +3277,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir4);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button102);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text39.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2704,7 +3329,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2712,14 +3337,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button61);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text40.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2743,7 +3385,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2751,14 +3393,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button62);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text41.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2782,7 +3441,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2790,14 +3449,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button63);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text42.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2821,7 +3497,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2829,14 +3505,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button64);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text43.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2860,7 +3553,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2868,14 +3561,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button65);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text44.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2899,7 +3609,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2907,14 +3617,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button66);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text45.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2942,7 +3669,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2950,14 +3677,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir6);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button70);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text46.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2981,7 +3725,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2989,14 +3733,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir6);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button71);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text41.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3020,7 +3781,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3028,14 +3789,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir5);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button72);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text48.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3059,7 +3837,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3067,14 +3845,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir6);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button73);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text49.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3098,7 +3893,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3106,14 +3901,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir6);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button74);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text50.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3137,7 +3949,7 @@ public class Pris5Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3145,14 +3957,31 @@ public class Pris5Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             TextView kpp41 = (TextView) findViewById(R.id.textViewWir6);
+
+
+                                                                             Button kpp42 = (Button) findViewById(R.id.button75);
+
+                                                                             kpp41.setText("5.00");
+                                                                             kpp42.setText("5.00");
+
+                                                                             Toast toast = Toast.makeText(getApplicationContext(),
+                                                                                     "Reset!",
+                                                                                     Toast.LENGTH_SHORT);
+                                                                             toast.setGravity(Gravity.CENTER, 0, 0);
+                                                                             toast.show();
+                                                                         }else
+                                                                         {
+                                                                             final_text51.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {

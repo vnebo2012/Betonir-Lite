@@ -1197,7 +1197,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1205,14 +1205,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1233,7 +1238,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1241,14 +1246,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text2.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1269,7 +1279,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1277,14 +1287,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text3.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1305,7 +1320,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1313,14 +1328,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text4.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1341,7 +1361,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1349,14 +1369,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text5.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1377,7 +1402,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1385,14 +1410,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text6.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1413,7 +1443,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1421,14 +1451,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text7.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1449,7 +1484,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1457,14 +1492,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text8.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1485,7 +1525,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1493,14 +1533,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text9.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1521,7 +1566,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1529,14 +1574,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text10.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1557,7 +1607,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1565,14 +1615,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text11.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1599,7 +1654,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1607,14 +1662,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text23.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1638,7 +1698,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1646,14 +1706,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text24.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1677,7 +1742,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1685,14 +1750,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text25.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1716,7 +1786,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1724,14 +1794,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text26.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1755,7 +1830,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1763,14 +1838,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text27.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1794,7 +1874,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1802,14 +1882,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text28.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1833,7 +1918,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1841,14 +1926,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text29.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1872,7 +1962,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1880,14 +1970,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text30.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1911,7 +2006,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1919,14 +2014,18 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text31.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1950,7 +2049,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1958,14 +2057,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text32.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -1989,7 +2093,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1997,14 +2101,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text33.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2035,7 +2144,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2043,14 +2152,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text34.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2074,7 +2188,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2082,14 +2196,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text35.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2113,7 +2232,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2121,14 +2240,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text36.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2152,7 +2276,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2160,14 +2284,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text37.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2191,7 +2320,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2199,14 +2328,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text38.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2230,7 +2364,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2238,14 +2372,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text39.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2273,7 +2412,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2281,14 +2420,18 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text40.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2312,7 +2455,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2320,14 +2463,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text41.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2351,7 +2499,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2359,14 +2507,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text42.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2390,7 +2543,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2398,14 +2551,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text43.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2429,7 +2587,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2437,14 +2595,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text44.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2468,7 +2631,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2476,14 +2639,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text45.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2511,7 +2679,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2519,14 +2687,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text46.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2550,7 +2723,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2558,14 +2731,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text47.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2589,7 +2767,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2597,14 +2775,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text48.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2628,7 +2811,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2636,14 +2819,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text49.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2667,7 +2855,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2675,14 +2863,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text50.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2706,7 +2899,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2714,14 +2907,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text51.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2938,7 +3136,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2946,14 +3144,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text60.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -2977,7 +3180,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -2985,14 +3188,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text61.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3016,7 +3224,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3024,14 +3232,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text62.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3055,7 +3268,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3063,14 +3276,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text63.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3098,7 +3316,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3106,14 +3324,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text64.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3137,7 +3360,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt4, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3145,14 +3368,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text65.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3176,7 +3404,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3184,14 +3412,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text66.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3215,7 +3448,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3223,14 +3456,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text67.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3254,7 +3492,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt3, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3262,14 +3500,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text68.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3631,7 +3874,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3639,14 +3882,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text79.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3670,7 +3918,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3678,14 +3926,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text80.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3709,7 +3962,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3717,14 +3970,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text81.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3748,7 +4006,7 @@ public class Fun2Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -3756,14 +4014,19 @@ public class Fun2Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text15.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3784,6 +4047,7 @@ public class Fun2Activity extends AppCompatActivity {
 
 
         //endregion
+
 
 
 

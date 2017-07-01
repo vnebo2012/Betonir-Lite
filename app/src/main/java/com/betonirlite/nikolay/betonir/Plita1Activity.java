@@ -1155,7 +1155,6 @@ public class Plita1Activity extends AppCompatActivity {
         loadText89();
 
 
-
         //Ряды кнопок (по Алерт Диалогу)
 
         //region секция 1 (button101 = (Button) findViewById(R.id.button10);)
@@ -1166,7 +1165,7 @@ public class Plita1Activity extends AppCompatActivity {
                                              @Override
                                              public boolean onLongClick(View arg0) {
                                                  LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt10, null);
+                                                 final View promptsView = li.inflate(R.layout.prompt, null);
                                                  AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
                                                  mDialogBuilder.setView(promptsView);
 
@@ -1174,14 +1173,19 @@ public class Plita1Activity extends AppCompatActivity {
 
                                                  mDialogBuilder
                                                          .setCancelable(false)
-                                                         .setPositiveButton("    Хочу версию Pro",
+                                                         .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-                                                                         Intent intent = new Intent(Intent.ACTION_VIEW);
-                                                                         intent.setData(Uri.parse("market://details?id=com.betonir.nikolay.betonir"));
-                                                                         startActivity(intent);
 
-                                                                     }
+                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
+                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
+                                                                         if (userInput.getText().length() == 0)
+                                                                         {
+                                                                             dialog.cancel();
+                                                                         }else
+                                                                         {
+                                                                             final_text.setText(userInput.getText());
+                                                                         }}
                                                                  })
                                                          .setNegativeButton("Отмена",
                                                                  new DialogInterface.OnClickListener() {
@@ -3321,7 +3325,7 @@ public class Plita1Activity extends AppCompatActivity {
                                                          .setPositiveButton("OK",
                                                                  new DialogInterface.OnClickListener() {
                                                                      public void onClick(DialogInterface dialog, int id) {
-}
+                                                                     }
                                                                  });
 
                                                  AlertDialog alertDialog = mDialogBuilder.create();
@@ -3337,233 +3341,6 @@ public class Plita1Activity extends AppCompatActivity {
         //endregion
 
 
-        //endregion
-
-
-
-        //endregion
-
-
-
-
-        //endregion
-
-
-
-        imageView1 = (ImageView) findViewById(R.id.imageView24);
-        imageView1.setOnClickListener(new View.OnClickListener() {
-                                             //region button124
-                                             @Override
-                                             public void onClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt7, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 //final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                     }
-                                                                 });
-
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return;
-                                             }
-                                         }
-        );
-        //endregion
-
-
-        //endregion
-
-        //region секция 12 button 26. 33. 34. 35
-
-
-        button179 = (Button) findViewById(R.id.button26);
-        final_text79 = (TextView) findViewById(R.id.button26);
-        button179.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button112
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text79.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button180 = (Button) findViewById(R.id.button33);
-        final_text80 = (TextView) findViewById(R.id.button33);
-        button180.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button113
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text80.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button181 = (Button) findViewById(R.id.button34);
-        final_text81 = (TextView) findViewById(R.id.button34);
-        button181.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button114
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text81.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-        button182 = (Button) findViewById(R.id.button35);
-        final_text82 = (TextView) findViewById(R.id.button35);
-        button182.setOnLongClickListener(new View.OnLongClickListener() {
-                                             //region button113
-                                             @Override
-                                             public boolean onLongClick(View arg0) {
-                                                 LayoutInflater li = LayoutInflater.from(context2);
-                                                 final View promptsView = li.inflate(R.layout.prompt, null);
-                                                 AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context2);
-                                                 mDialogBuilder.setView(promptsView);
-
-                                                 final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-
-                                                 mDialogBuilder
-                                                         .setCancelable(false)
-                                                         .setPositiveButton("OK",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-
-                                                                         //final EditText etNum55 = (EditText) findViewById(R.id.editText2);
-                                                                         final EditText userInput = (EditText) promptsView.findViewById(R.id.editText2);
-                                                                         if (userInput.getText().length() == 0)
-                                                                         {
-                                                                             dialog.cancel();
-                                                                         }else
-                                                                         {
-                                                                             final_text15.setText(userInput.getText());
-                                                                         }}
-                                                                 })
-                                                         .setNegativeButton("Отмена",
-                                                                 new DialogInterface.OnClickListener() {
-                                                                     public void onClick(DialogInterface dialog, int id) {
-                                                                         dialog.cancel();
-                                                                     }
-                                                                 });
-                                                 AlertDialog alertDialog = mDialogBuilder.create();
-                                                 alertDialog.show();
-                                                 return false;
-                                             }
-                                         }
-        );
-
-        //endregion
-
-
-
-
-        //endregion
 
 
 
