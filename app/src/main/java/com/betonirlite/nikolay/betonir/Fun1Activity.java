@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -25,8 +24,6 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Locale;
@@ -701,49 +698,7 @@ public class Fun1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_fun1);
 
 
-        mNewGameButton = (ImageButton) findViewById(R.id.dom);
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4882550262749386/9775368155");
 
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                //requestNewInterstitial();
-                // beginPlayingGame();
-
-                Intent a = new Intent(Fun1Activity.this, MainActivity.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(a);
-            }
-        });
-
-        requestNewInterstitial();
-
-        mNewGameButton.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-                ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-                boolean mob = icheck.getActiveNetworkInfo() != null;
-                if(mob) {
-
-                    if (mInterstitialAd.isLoaded()) {
-                        mInterstitialAd.show();
-
-                    } else {
-                        beginPlayingGame();
-                    }
-
-                } else {
-                    Intent a = new Intent(Fun1Activity.this, MainActivity.class);
-                    a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(a);
-                }
-
-
-            }
-        });
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -6635,39 +6590,7 @@ public class Fun1Activity extends AppCompatActivity {
         startActivity(a);
     }
 
-    private void requestNewInterstitial() {
 
-        AdRequest adRequest = new AdRequest.Builder()
-
-                .addTestDevice("SEE_YOUR_LOGCAT_TO_GET_YOUR_DEVICE_ID")
-
-                .build();
-        mInterstitialAd.loadAd(adRequest);
-    }
-    private void beginPlayingGame() {
-        // Play for a while, then display the New Game Button
-    }
-    @Override
-    public void onBackPressed() {
-
-        ConnectivityManager icheck = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        boolean mob = icheck.getActiveNetworkInfo() != null;
-        if(mob) {
-
-            if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-
-            } else {
-                beginPlayingGame();
-            }
-
-        } else {
-            Intent a = new Intent(this, MainActivity.class);
-            a.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(a);
-        }
-    }
     //do something on back.
     public void onClick_Ca(View view) {
         long mills = 15L;
